@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+  <title>PAC 2 - Eines</title>
+</head>
+
+<body>
+  <include src="./views/header.html"></include>
+  <section class="section--contact">
+
+    <div class="container">
+      <h1>Contacta</h1>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <div class="form-group">
+              <label for="nombre">Nom i cognoms</label>
+              <input type="text" class="form-control form-control-lg" id="nombre" placeholder="Introdueix el teu nom" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Correu electrònic</label>
+              <input type="email" class="form-control form-control-lg" id="email" placeholder="Introdueix el teu correu electrònic" required>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Missatge</label>
+              <textarea class="form-control form-control-lg" id="mensaje" rows="3" placeholder="Introdueix el teu missatge"></textarea>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="politicaPrivacidad" required>
+              <label class="form-check-label" for="politicaPrivacidad">Accepto la <a href="#">política de privacitat</a></label>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3 btn-lg">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <include src="./views/footer.html"></include>
+  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+
+</html>

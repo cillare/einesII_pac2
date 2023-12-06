@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+  <title>PAC 2 - Eines</title>
+</head>
+
+<body>
+  <include src="./views/header.html"></include>
+  <section class="section--home">
+    <div class="container">
+      <div class="home--content">
+        <main>
+          <div class="home__title">
+            <h1>Tennis UOC</h1>
+          </div>
+          <h2>Club de tennis d'aficionats</h2>
+          <div class="about">
+            <p> Club de Tennis UOC no només constitueix un espai dedicat a la pràctica d'aquest apassionant esport, sinó que emergeix com una vibrat comunitat que reuneix una diversitat d'entusiastes de la pilota groga. Aquesta entitat es transforma en un autèntic epicentre d'activitats, oferint una experiència completa i enriquidora per als amants d'aquest esport.</p>
+            <p>Amb la seva atmosfera acollidora i la participació activa dels membres, el club no només fomenta la pràctica del tennis, sinó que també promou la creació de lligams i amistats dins de la comunitat.</p>
+          </div>
+          <img src="assets/images/home_1.jpg" alt="Tennis UOC">
+          <a href="bio.html">
+            <button type="button" class="btn btn-primary">Saber-ne més</button>
+          </a>
+        </main>
+      </div>
     </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+  </section>
+  <include src="./views/footer.html"></include>
+  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+
 </html>

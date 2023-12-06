@@ -1,0 +1,29 @@
+.section--contact {
+    margin-bottom: 100px;
+    border-top: 1px solid $primary;
+
+    label {
+        margin-bottom: 10px;
+        color: $primary;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+        margin-bottom: 30px;
+    }
+
+    input, textarea, input[type="checkbox"] {
+        border-radius: unset;
+    }
+
+    input:focus, textarea:focus {
+        border-color: $primary;
+        box-shadow: 0 0 0 0.2rem rgba(16, 96, 72, 0.25);
+    }
+
+    .form-check-input:checked {
+        background-color: $primary;
+        border-color: $primary;
+    }
+
+
+}

@@ -1,0 +1,39 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-primary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $primary;
+  font-family: $font-title;
+}
+
+h1 {
+  text-align: center;
+  margin: 100px 0 50px;
+}
+
+a {
+  color: $primary;
+}
+
+.btn-primary {
+  background-color: $primary;
+  border: none;
+  border-radius: unset;
+  width: 100%;
+}
+
+.btn-primary:hover {
+  background-color: $black;
+}
