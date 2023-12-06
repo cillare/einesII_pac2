@@ -1,5 +1,6 @@
 .section--team {
     border-top: 1px solid $primary;
+    container-type: inline-size;
 
     .team--content {
         display: flex;
@@ -15,6 +16,22 @@
             .card-img-top {
                 border-radius: unset;
             }
+        }
+    }
+}
+
+@container (max-width: 991px) {
+    .section--team .team--content {
+        .team__card {
+            width: 45%;
+        }
+    }
+}
+
+@container (max-width: 767px) {
+    .section--team .team--content {
+        .team__card {
+            width: 100%;
         }
     }
 }
